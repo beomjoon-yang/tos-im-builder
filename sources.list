@@ -1,0 +1,21 @@
+# 
+
+# deb cdrom:[Official Debian GNU/Linux Live 10.7.0 gnome 2020-12-05T12:04]/ buster main
+
+#deb cdrom:[Official Debian GNU/Linux Live 10.7.0 gnome 2020-12-05T12:04]/ buster main
+
+deb http://ftp.kaist.ac.kr/debian/ buster main
+deb-src http://ftp.kaist.ac.kr/debian/ buster main
+
+deb http://security.debian.org/debian-security buster/updates main
+deb-src http://security.debian.org/debian-security buster/updates main
+
+# buster-updates, previously known as 'volatile'
+deb http://ftp.kaist.ac.kr/debian/ buster-updates main
+deb-src http://ftp.kaist.ac.kr/debian/ buster-updates main
+
+# This system was installed using small removable media
+# (e.g. netinst, live or single CD). The matching "deb cdrom"
+# entries were disabled at the end of the installation process.
+# For information about how to configure apt package sources,
+# see the sources.list(5) manual.
