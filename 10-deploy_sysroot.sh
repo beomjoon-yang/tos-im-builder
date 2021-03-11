@@ -23,7 +23,7 @@ sudo mkdir -p ${TOS_SYSROOT}
 
 sudo ostree admin init-fs "${TOS_SYSROOT}"
 sudo ostree admin --sysroot="${TOS_SYSROOT}" os-init ${TOS_VERSION}
-#ostree --repo="${REPOPATH}" remote add ${TOS_VERSION} ${TOS_OSTREE_URL} \
+#sudo ostree --repo="${REPOPATH}" remote add ${TOS_VERSION} ${TOS_OSTREE_URL} \
 #  ${TOS_VERSION}-${OSTREE_COMMIT_BRANCH}
 sudo ostree --repo="${REPOPATH}" pull-local --disable-fsync \
   --remote=${TOS_VERSION} ${OSTREE_LOCAL_REPO} ${OSTREE_COMMIT_BRANCH}

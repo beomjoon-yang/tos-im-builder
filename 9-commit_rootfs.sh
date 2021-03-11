@@ -56,6 +56,7 @@ ln -s ./var/home ${OSTREE_COMMIT_ROOTFS}/home
 ln -s ./run/media ${OSTREE_COMMIT_ROOTFS}/media
 ln -s ./var/opt ${OSTREE_COMMIT_ROOTFS}/opt
 ln -s ./var/roothome ${OSTREE_COMMIT_ROOTFS}/root
+ln -s /sysroot/ostree ${OSTREE_COMMIT_ROOTFS}/ostree
 
 # 3. commit rootfs
 sudo ostree init --repo=${OSTREE_LOCAL_REPO}
